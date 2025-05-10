@@ -29,13 +29,15 @@
       justify-content: center;
       box-shadow: 0 4px 12px rgb(255 87 34 / 0.18);
     }
-    header img {
+     header img {
       width: 40px;
       height: 40px;
       margin-right: 1rem;
-      border-radius: 50%;
-      background: #fff;
-      padding: 4px;
+      /* Remove border-radius, background, and padding */
+      border-radius: 0;
+      background: none;
+      padding: 0;
+      object-fit: contain; /* ensures the whole logo is visible */
     }
     .container {
       max-width: 960px;
@@ -287,7 +289,7 @@
 </head>
 <body>
   <header>
-    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Logo" />
+    <img src="https://cdn-icons-png.flaticon.com/512/1118/1118158.png" alt="Logo" />
     CUET College Finder
   </header>
   <div class="container">
