@@ -287,6 +287,102 @@
       .finder button { width: 100%; }
       #modal .modal-content { padding: 1.1rem 0.7rem; }
     }
+        .footer {
+      background: #ff5722;
+      color: white;
+      padding: 2.5rem 1rem 1rem;
+      font-family: 'Nunito', sans-serif;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+      box-shadow: 0 -4px 20px rgb(255 87 34 / 0.4);
+      margin-top: 4rem;
+    }
+    .footer-container {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2.5rem;
+      justify-content: space-between;
+    }
+    .footer-section {
+      flex: 1 1 260px;
+    }
+    .footer-about h3 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-bottom: 0.8rem;
+    }
+    .footer-about p {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #ffe6d1;
+    }
+    .footer-links h4,
+    .footer-contact h4 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin-bottom: 0.8rem;
+      color: #ffccbc;
+    }
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .footer-links ul li {
+      margin-bottom: 0.5rem;
+    }
+    .footer-links ul li a {
+      color: #ffd8bf;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .footer-links ul li a:hover {
+      color: #fff;
+    }
+    .footer-contact p {
+      margin: 0.3rem 0;
+      font-size: 1rem;
+      color: #ffe6d1;
+    }
+    .footer-contact a {
+      color: #ffd8bf;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .footer-contact a:hover {
+      color: #fff;
+    }
+    .social-icons a {
+      font-size: 1.6rem;
+      margin-right: 1rem;
+      color: #ffd8bf;
+      transition: color 0.3s ease;
+      text-decoration: none;
+    }
+    .social-icons a:hover {
+      color: #fff;
+    }
+    .footer-bottom {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #ffccbc;
+      margin-top: 1.8rem;
+      font-family: 'Nunito', sans-serif;
+    }
+    @media (max-width: 600px) {
+      .footer-container {
+        flex-direction: column;
+        gap: 1.8rem;
+      }
+      .footer-section {
+        flex: 1 1 100%;
+      }
+    }
+
   </style>
   <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/1118/1118158.png">
 </head>
@@ -420,5 +516,36 @@
   </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6721131033400222"
      crossorigin="anonymous"></script>
+  <footer class="footer">
+  <div class="container footer-container">
+    <div class="footer-section footer-about">
+      <h3>CUET College Finder</h3>
+      <p>Your go-to platform to find the best colleges based on your CUET-PG score. Powered by passion and data.</p>
+    </div>
+    <div class="footer-section footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#finderForm">Find Colleges</a></li>
+        <li><a href="#resultsCount">Results</a></li>
+        <li><a href="https://undraw.co/" target="_blank" rel="noopener noreferrer">Illustrations by unDraw</a></li>
+      </ul>
+    </div>
+    <div class="footer-section footer-contact">
+      <h4>Contact Us</h4>
+      <p>Email: <a href="mailto:support@cuetcollegefinder.com">support@cuetcollegefinder.com</a></p>
+      <p>Follow us on:</p>
+      <div class="social-icons">
+        <a href="https://twitter.com/" target="_blank" aria-label="Twitter" rel="noopener noreferrer">🐦</a>
+        <a href="https://facebook.com/" target="_blank" aria-label="Facebook" rel="noopener noreferrer">📘</a>
+        <a href="https://instagram.com/" target="_blank" aria-label="Instagram" rel="noopener noreferrer">📸</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 CUET College Finder. All rights reserved.</p>
+  </div>
+</footer>
+
 </body>
 </html>
